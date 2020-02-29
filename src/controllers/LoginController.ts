@@ -1,6 +1,6 @@
-import { Response, NextFunction } from 'express';
+import { Response } from 'express';
 import { RequestWithBody } from './types';
-import { get, use, bodyValidator, controller, post } from './decorators';
+import { get, bodyValidator, controller, post } from './decorators';
 
 @controller('/auth')
 class LoginController {
